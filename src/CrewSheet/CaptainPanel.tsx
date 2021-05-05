@@ -1,5 +1,6 @@
 import React from "react";
 import { Form, Row, Card } from "react-bootstrap";
+import StatLine from "./StatLine";
 
 type CaptainProps = {
     name : string,
@@ -22,36 +23,7 @@ const CaptainPanel = (props : CaptainProps) => {
                             <Form.Control type="number" placeholder="0"></Form.Control>
                         </Form.Group>
                     </Row>
-                    <Row>
-                        <Form.Group>
-                            <Form.Label>Move</Form.Label>
-                            <Form.Control type="text"></Form.Control>
-                        </Form.Group>
-                        <Form.Group>
-                            <Form.Label>Fight</Form.Label>
-                            <Form.Control type="text"></Form.Control>
-                        </Form.Group>
-                        <Form.Group>
-                            <Form.Label>Shoot</Form.Label>
-                            <Form.Control type="text"></Form.Control>
-                        </Form.Group>
-                        <Form.Group>
-                            <Form.Label>Armor</Form.Label>
-                            <Form.Control type="text"></Form.Control>
-                        </Form.Group>
-                        <Form.Group>
-                            <Form.Label>Will</Form.Label>
-                            <Form.Control type="text"></Form.Control>
-                        </Form.Group>
-                        <Form.Group>
-                            <Form.Label>Health</Form.Label>
-                            <Form.Control type="text"></Form.Control>
-                        </Form.Group>
-                        <Form.Group>
-                            <Form.Label>Current Health</Form.Label>
-                            <Form.Control type="text"></Form.Control>
-                        </Form.Group>
-                    </Row>
+                    <StatLine move={6} fight={3} shoot={2} armor={9} will={3} health={16} currentHealth={16} ></StatLine>
                 </Form>
             </Card.Body>
         </Card>
