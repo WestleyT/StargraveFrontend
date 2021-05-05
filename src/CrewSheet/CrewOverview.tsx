@@ -14,8 +14,8 @@ type OverviewProps = {
 const CrewOverview = (props : OverviewProps) => {
     return (
         <Card>
+            <Card.Header>General Info</Card.Header>
             <Card.Body>
-                <Card.Title>General Info</Card.Title>
                 <Form>
                     <Row>
                         <Form.Group className="col-md-8">

@@ -21,7 +21,7 @@ const StatLine = (props : StatProps) => {
     const [currentHealth, setCurrentHealth] = useState(props.currentHealth);
 
     return (
-        <Row>
+        <Row className="col-md-12 flex-nowrap">
             <Form.Group>
                 <Form.Label>Move</Form.Label>
                 <Form.Control type="text" onChange={(event) => setMove(Number(event.target.value))} value={move}></Form.Control>
