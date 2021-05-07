@@ -37,7 +37,7 @@ const CaptainPanel = ({captainProps} : CaptainProps) => {
                             <Form.Control as="select" onChange={(event) => {
                                 switch(event.target.value) {
                                     case "Robotics Expert": {
-                                        let newStats = stats;
+                                        let newStats = {...stats};
                                         newStats.will += 1;
                                         setStats(newStats);
                                         break;
